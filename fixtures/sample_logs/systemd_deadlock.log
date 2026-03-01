@@ -1,0 +1,8 @@
+Jun 25 08:01:00 prod-api-01 systemd[1]: multi-user.target: Job redis.service/start deleted to break ordering cycle starting with redis.service/start
+Jun 25 08:01:00 prod-api-01 systemd[1]: redis.service: Start job pending for 120s
+Jun 25 08:01:00 prod-api-01 systemd[1]: api-gateway.service: Start job running for 120s (redis.service)
+Jun 25 08:01:00 prod-api-01 systemd[1]: api-gateway.service: Job api-gateway.service/start timed out.
+Jun 25 08:01:01 prod-api-01 systemd[1]: api-gateway.service: Failed with result 'timeout'.
+Jun 25 08:01:01 prod-api-01 systemd[1]: Failed to start api-gateway.service - API Gateway.
+Jun 25 08:01:05 prod-api-01 systemd[1]: redis.service: Start request repeated too quickly.
+Jun 25 08:01:05 prod-api-01 systemd[1]: redis.service: Failed with result 'start-limit-hit'.

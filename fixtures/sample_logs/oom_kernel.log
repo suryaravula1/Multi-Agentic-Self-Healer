@@ -1,0 +1,9 @@
+Jun 25 10:12:01 prod-web-01 kernel: [892341.221] Out of memory: Kill process 4412 (java) score 890 or sacrifice child
+Jun 25 10:12:01 prod-web-01 kernel: [892341.223] Killed process 4412 (java) total-vm:4194304kB, anon-rss:3670016kB, file-rss:0kB, shmem-rss:0kB
+Jun 25 10:12:02 prod-web-01 systemd[1]: nginx.service: Main process exited, code=killed, status=9/KILL
+Jun 25 10:12:02 prod-web-01 systemd[1]: nginx.service: Failed with result 'signal'.
+Jun 25 10:12:02 prod-web-01 systemd[1]: Failed to start nginx.service - A high performance web server.
+Jun 25 10:12:05 prod-web-01 kernel: [892345.112] oom_reaper: reaped process 4412 (java), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+Jun 25 10:12:10 prod-web-01 systemd[1]: nginx.service: Scheduled restart job, restart counter is at 5.
+Jun 25 10:12:10 prod-web-01 systemd[1]: nginx.service: Start request repeated too quickly.
+Jun 25 10:12:10 prod-web-01 systemd[1]: nginx.service: Failed with result 'start-limit-hit'.

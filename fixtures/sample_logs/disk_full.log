@@ -1,0 +1,8 @@
+Jun 25 09:44:12 prod-db-01 systemd[1]: Starting postgresql.service - PostgreSQL RDBMS...
+Jun 25 09:44:15 prod-db-01 postgresql[2201]: FATAL: could not write lock file "postmaster.pid": No space left on device
+Jun 25 09:44:15 prod-db-01 systemd[1]: postgresql.service: Main process exited, code=exited, status=1/FAILURE
+Jun 25 09:44:15 prod-db-01 systemd[1]: postgresql.service: Failed with result 'exit-code'.
+Jun 25 09:44:15 prod-db-01 systemd[1]: Failed to start postgresql.service - PostgreSQL RDBMS.
+Jun 25 09:44:16 prod-db-01 systemd[1]: systemd-journald.service: Failed to write entry (22 items, 1042 bytes), ignoring (No space left on device)
+Jun 25 09:44:20 prod-db-01 systemd[1]: docker.service: Dependency postgresql.service failed to start.
+Jun 25 09:44:20 prod-db-01 systemd[1]: docker.service: Job docker.service/start failed with result 'dependency'.
