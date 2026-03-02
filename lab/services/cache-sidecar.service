@@ -1,0 +1,12 @@
+[Unit]
+Description=Lab cache sidecar (dependency for demo-app)
+After=network.target
+Before=demo-app.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/true
+
+[Install]
+WantedBy=multi-user.target
