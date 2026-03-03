@@ -1,0 +1,13 @@
+{
+  "name": "demo-node-api",
+  "version": "1.0.0",
+  "description": "Fragile Node.js demo service for self-healer testing",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "redis": "^4.7.0"
+  }
+}
