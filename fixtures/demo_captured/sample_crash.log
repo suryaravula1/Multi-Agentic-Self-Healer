@@ -1,0 +1,13 @@
+# Captured demo failure: crash @ Jun 25 14:30:01
+
+Jun 25 14:30:01 prod-demo-01 systemd[1]: node-api.service: Main process exited, code=exited, status=1/FAILURE
+Jun 25 14:30:01 prod-demo-01 systemd[1]: node-api.service: Failed with result 'exit-code'.
+Jun 25 14:30:01 prod-demo-01 systemd[1]: Failed to start node-api.service - Demo Node API.
+
+=== docker compose logs: node-api ===
+demo-node-api  | 2026-06-25T14:29:58.000Z [fatal] Manual crash injection requested
+demo-node-api  | 2026-06-25T14:30:01.000Z [error] npm error command failed
+demo-node-api  | 2026-06-25T14:30:01.000Z [error] npm error signal SIGTERM
+demo-node-api  | 2026-06-25T14:30:02.000Z [info] Starting node-api.service on port 3000
+demo-node-api  | 2026-06-25T14:30:03.000Z [info] Connected to Redis
+demo-node-api  | 2026-06-25T14:30:03.000Z [info] Redis dependency satisfied
